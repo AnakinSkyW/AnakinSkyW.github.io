@@ -82,6 +82,52 @@ a {
 }
 
 //********************************************************
+//                    comment
+//********************************************************
+// #idc-container-parent {
+//   // background-color: $post-panel-color;
+//   // box-shadow: 0 0 0 0, 0 8px 16px rgba(0, 0, 0, 0.2);
+//   // border-radius: 6px;
+//   // padding: 20px;
+//   // font-size: 14px;
+//   // display: flex;
+//   // position: relative;
+
+//   // -webkit-box-orient: vertical;
+//   // -webkit-box-direction: normal;
+//   // flex-direction: column;
+//   // min-width: 0;
+//   // word-wrap: break-word;
+//   // background-clip: border-box;
+//   // border: 1px solid rgba(0,0,0,.125);
+//   // margin: 0 auto;
+//   margin-right: -15px;
+//   margin-left: -15px;
+//   flex-wrap: wrap;
+//   border-radius: 6px;
+//   padding: 20px;
+//   font-size: 14px;
+//   text-align: center;
+//   position: relative;
+//   flex-direction: column;
+//   background-clip: border-box;
+//   display: flex;
+//   line-height: 1.5;
+// }
+.idc {
+  background-color: #39393a;
+  border-radius: 6px;
+  padding: 20px;
+  // font-size: 14px;
+  // text-align: center;
+  // position: relative;
+  // flex-direction: column;
+  // background-clip: border-box;
+  // display: flex;
+  // line-height: 1.5;
+}
+
+//********************************************************
 //                    Social Links
 //********************************************************
 ul.social-media {
