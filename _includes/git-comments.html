@@ -1,0 +1,24 @@
+<!-- {% if page.comments != false %} -->
+<!-- <script> 
+var idcomments_acct = 'VUzZtQSEru4KiozAedpW'; 
+var idcomments_post_id = '{{ page.url }}'; 
+var idcomments_post_url; 
+</script>
+<p>dahjkshdjklahsjkldhaljhaljkhsl</p>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script> {% endif %} -->
+
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'AnakinSkyW',
+    repo: 'https://github.com/AnakinSkyW/AnakinSkyW.github.io.git',
+    oauth: {
+        client_id: 'Iv1.4b6b43d92a7b30ee',
+        client_secret: 'fae98371a9bbf0a93cee1ef53a27402fc203f172',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
