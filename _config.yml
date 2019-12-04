@@ -38,8 +38,11 @@ yandex_metrica:
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
-disqus: AnakinSkyW
+## 评论相关
+#disqus: AnakinSkyW
 comments: false
+intensedebate_comments: true
+#intensedebate_identifier: VUzZtQSEru4KiozAedpW
 
 permalink: /:year/:month/:title/
 

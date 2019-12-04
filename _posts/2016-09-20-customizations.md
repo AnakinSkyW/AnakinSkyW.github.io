@@ -7,6 +7,7 @@ share: true
 tags:
  - customizations
  - jekyll
+comments: true
 ---
 
 # Accent color
