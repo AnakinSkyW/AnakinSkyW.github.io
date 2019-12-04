@@ -39,7 +39,7 @@ yandex_metrica:
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
 ## 评论相关
-disqus_shortname: AnakinSkyW
+comment_shot: AnakinSkyW
 #intensedebate_identifier: VUzZtQSEru4KiozAedpW
 
 permalink: /:year/:month/:title/
