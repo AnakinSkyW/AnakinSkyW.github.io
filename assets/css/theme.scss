@@ -220,9 +220,10 @@ ul.sideBarTags {
   list-style: none;
   li:before {
     content: '\f02b';
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     float: left;
     margin-left: -1.5em;
+    font-weight: 900;
   }
 }
 
