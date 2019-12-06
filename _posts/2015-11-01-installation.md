@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Installation"
-date: 2015-11-01 16:25:06
+date: 2019-12-06 10:16:00
 description: Here you'll find out how to install this theme
 tags: 
- - java
+ - help
 ---
 
 ## Installation

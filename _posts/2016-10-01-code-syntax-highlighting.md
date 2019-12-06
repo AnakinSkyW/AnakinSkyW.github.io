@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Code snippets"
-date: 2016-10-01 16:25:06
-tags: code jekyll
+date: 2019-12-06 10:16:00
+tags: help
 description: Sample post showing how code samples would look like
 comments: true
 ---

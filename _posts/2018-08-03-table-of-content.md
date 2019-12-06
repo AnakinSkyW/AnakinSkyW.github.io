@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Table of content
-date:   2018-08-03 11:07
+date: 2019-12-06 10:16:00
 description: For some big articles you can use table on content
-comments: true
+tags: help
 ---
 
 Above you can see how it looks like. 

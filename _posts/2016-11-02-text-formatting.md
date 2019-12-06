@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "Text formatting"
-date: 2016-11-02 16:25:06
-tags: jekyll
+date: 2019-12-06 10:16:00
+tags: help
 description: Text formatting examples.
-comments: true
 ---
 
 # Text formatting example

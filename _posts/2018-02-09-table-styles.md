@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Table styles
-date:   2018-02-09 11:07
+date: 2019-12-06 10:16:00
 description: Examples of different table styles
-comments: true
+tags: help
 ---
 
 Below are the examples of the default table styling.
