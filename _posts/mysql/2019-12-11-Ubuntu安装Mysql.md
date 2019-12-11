@@ -27,17 +27,13 @@ sudo dpkg -i mysql-apt-config_0.8.6-1_all.deb
 ### 2.开始安装mysql-server
 
 更新软件列表
-
 >bash
 {:.filename}
 {% highlight bash %}
 sudo apt-get update
 {% endhighlight %}
 
-
-
 开始安装  
-  
 >bash
 {:.filename}
 {% highlight bash %}
@@ -74,3 +70,5 @@ flush privileges;
 {% endhighlight %}
 
 ## 3.Over
+
+:bug: this is a emoji test
