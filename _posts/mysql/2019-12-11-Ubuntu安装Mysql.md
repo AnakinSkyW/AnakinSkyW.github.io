@@ -33,6 +33,8 @@ sudo dpkg -i mysql-apt-config_0.8.6-1_all.deb
 sudo apt-get update
 {% endhighlight %}
 
+
+
 开始安装  
   
 >bash
