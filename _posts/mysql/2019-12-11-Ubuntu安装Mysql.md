@@ -17,6 +17,7 @@ toc: false
 
 ### 1.安装mysql-apt-config.deb包进行APT源设置
 
+>bash
 {:.filename}
 {% highlight bash %}
 sudo dpkg -i mysql-apt-config_0.8.6-1_all.deb
