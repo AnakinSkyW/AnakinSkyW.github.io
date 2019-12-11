@@ -26,37 +26,43 @@ sudo dpkg -i mysql-apt-config_0.8.6-1_all.deb
 ### 2.开始安装mysql-server
 
 更新软件列表
+
 {:.filename}
 {% highlight bash %}
 sudo apt-get update
 {% endhighlight %}  
 
 开始安装  
+
 {:.filename}
 {% highlight bash %}
 sudo apt-get install mysql-server
 {% endhighlight %}  
 安装过程中输入root密码  
 
-开机启动  
+开机启动
+
 {:.filename}
 {% highlight bash %}
 systemctl start mysql
 {% endhighlight %}
 
 创建用户  
+
 {:.filename}
 {% highlight bash %}
 create user 'abc'@'%' identified by '123456';
 {% endhighlight %}
 
 授权  
+
 {:.filename}
 {% highlight bash %}
 grant select,update,delete,create,drop on *.* to abc@"%";
 {% endhighlight %}
 
 刷新
+
 {:.filename}
 {% highlight bash %}
 flush privileges;
