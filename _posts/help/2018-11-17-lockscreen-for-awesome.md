@@ -5,7 +5,7 @@ date: 2018-11-17 14:25
 comments: true
 description: A few-liner lock screen for Awesome WM using i3lock.
 tags:
-- awesome wm
+- help
 ---
 
 

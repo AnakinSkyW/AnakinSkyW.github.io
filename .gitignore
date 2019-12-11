@@ -3,3 +3,6 @@ _site/
 .idea
 *~
 Gemfile.lock
+Gemfile
+.jekyll-cache/
+.vscode/
