@@ -42,6 +42,12 @@ test
 sudo apt-get install mysql-server
 {% endhighlight %}
 
+>bash
+{:.filename}
+{% highlight bash %}
+test new hi
+{% endhighlight %}
+
 开始安装  
 
 {:.filename}
