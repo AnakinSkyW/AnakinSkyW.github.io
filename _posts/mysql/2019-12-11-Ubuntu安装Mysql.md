@@ -31,6 +31,9 @@ sudo dpkg -i mysql-apt-config_0.8.6-1_all.deb
 {% highlight bash %}
 sudo apt-get update
 test
+testt
+test
+test
 {% endhighlight %}  
 
 >SQL
