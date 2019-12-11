@@ -39,12 +39,7 @@ test
 >SQL
 {:.filename}
 {% highlight SQL %}
-select count(*) as cm_content_nodes
-from alf_node nd, alf_qname qn, alf_namespace ns
-where qn.ns_id = ns.id
-  and nd.type_qname_id = qn.id
-  and ns.uri = 'http://www.alfresco.org/model/content/1.0'
-  and qn.local_name = 'content';
+sudo apt-get install mysql-server
 {% endhighlight %}
 
 开始安装  
