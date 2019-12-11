@@ -4,7 +4,7 @@ title: "Analytics, tags and comments"
 date: 2019-12-06 10:16:00
 description: Here you'll find how to setup analytics, tags and comments for your blog
 tags:
- - mysql
+ - help
 comments: true
 ---
 
