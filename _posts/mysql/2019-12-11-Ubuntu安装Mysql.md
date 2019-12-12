@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Ubuntu安装Mysql
+title: Ubuntu安装MySQL
 date: 2019-12-11 10:07:18
-description: Ubuntu安装Mysql
+description: Ubuntu安装MySQL
 share: true
 tags:
  - mysql
@@ -70,5 +70,3 @@ flush privileges;
 {% endhighlight %}
 
 ## 3.Over
-
-:bug: this is a emoji test
