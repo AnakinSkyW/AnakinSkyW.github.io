@@ -1,0 +1,62 @@
+# HTML提供了三种不同的列表
+
+## 1.有序列表
+
+每个项目带有编号，由```<ol>```元素来创建有序列表，```<li>```代表列表项目
+
+```html
+<ol>
+    <li>Chop potatoes into quarters</li>
+    <li>Simmer in salted water for 15-20 minutes until tender</li>
+</ol>
+```
+
+## 2.无序列表
+
+以点状项目符号开头的列表，使用```<ul>```元素来创建无序列表  
+
+```html
+<ul>
+    <li>1kg King Edward potatoes</li>
+    <li>100ml milk</li>
+</ul>
+```
+
+## 3.定义列表
+
+由一系列术语组成的列表，由```<dl>```元素创建，通常包含一系列术语及其定义。在```<dl>```元素内部，经常可以看到```<dt>```和```<dd>```元素。  
+```<dt>```元素用来包含被定义的术语  
+```<dd>```元素用来包含定义
+
+```html
+<dl>
+    <dt>Sashimi</dt>
+    <dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger toot</dd>
+    <dt>Scale</dt>
+    <dd>A device used to accurately measure the weight of ingredients</dd>
+</dl>
+```
+
+## 4.嵌套列表
+
+可在```<li>```元素中放入另一个列表来创建子列表
+
+```html
+<ul>
+    <li>Mousses</li>
+    <li>Pastries
+        <ul>
+            <li>Croissant</li>
+            <li>Mille-feuille</li>
+        </ul>
+    </li>
+</ul>
+```
+
+## 5.小结
+
+>* html中有三种列表，有序列表、无序列表和定义列表
+>* 有序列表使用数字编号
+>* 无序列表使用项目符号
+>* 定义列表用来定义专业术语
+>* 列表可以嵌套在其他列表中

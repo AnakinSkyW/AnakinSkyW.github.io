@@ -1,0 +1,50 @@
+# HTML使用元素来描述页面结构
+
+## 1.标签
+
+标签的作用就像容器：起始标签和结束标签之间的内容结构信息  
+
+```html
+<!-- 起始<html>到</html>都是HTML代码 -->
+<html>  
+    <body>
+        <h1></h1>
+        <p></p>
+    </body>
+</html>
+```  
+
+## 2.特性
+
+特性提供元素中内容的附加信息。他们出现在元素的起始标签中，并且由两部分组成：特性**名称**和特性**值**，中间由等号隔开
+
+```html
+<p lang="en-us"> Paragraph in English</p>
+```
+
+## 3.body、head和title
+
+```<body>```:元素中的所有内容都会显示在浏览器主窗口中  
+```<head>```:包含页面的一些信息  
+```<title>```:显示浏览器顶端内容  
+
+```html
+<html>
+    <head>
+        <title>This is the Title of the Page</title>
+    </head>
+    <body>
+        <h1>This is the Body of the Page</h1>
+        <p>Anything within the body of a web page is displayed in the main browser window</p>
+    </body>
+</html>
+```
+
+## 4.总结
+
+>* HTML页面是文本文档  
+>* HTML使用标签为包含在其中的内容提供结构信息  
+>* 标签经常与元素互换使用
+>* 标签经常成对出现  
+>* 标签可以附带属性  
+>* 特性由特性名称和特性值组成  

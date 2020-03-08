@@ -1,0 +1,126 @@
+# HTML中的标签表达特定的含义并指示浏览器向用户呈现出合理的页面结构
+
+## 1.结构化标记
+
+### 1.标题
+
+标题有六个级别，浏览器使用不同的字号显示这些标题中的内容。
+
+```html
+<h1>This is a Main Heading </h1>
+<h2>This is a Level 2 Heading </h2>
+<h2>This is a Level 3 Heading </h2>
+<h2>This is a Level 4 Heading </h2>
+<h2>This is a Level 5 Heading </h2>
+<h2>This is a Level 6 Heading </h2>
+```
+
+### 2.段落
+
+HTML中成段的文字，默认情况下，浏览器会另起一行并与后续段落保持一定的距离。
+
+```html
+<p> A paragraph consists of one or more senteces that form a self-contained unit of discourse.</p>
+<p> Text is easier to understand when it is split up into units of text.</p>
+```
+
+### 3.粗体和斜体
+
+```<b>```将文字显示为粗体,```<i>```将文字显示为斜体
+
+```html
+<p> This is <i>how</i> we make a word apper <b>bold.</b></p>
+```
+
+### 4.上标和下标
+
+```<sup>```用来表示上标字符,```sub```用来表示下标字符
+
+```html
+<p> On the 4<sup>th</sup> of September you will learn about E=MC<sup>2</sup>.</p>
+<p> The amount of CO<sub>2</sub>.</p>
+```
+
+### 5.空白
+
+两个或者两个以上的空格会显示为一个空格，这一特性被称为**白色空间折叠**
+
+### 6.换行符和水平线
+
+```<br />```表示换行符标签，```<hr />```表示插入一条水平线
+
+```html
+<p>The Earth <br />gets one hundred tons heavier</p>
+<hr />
+<p>Jupiter is bigger than all the other plants.</p>
+```
+
+## 2.语义化标记
+
+有一些文本元素，他们不影响网页结构，却为所在的页面添加额外信息——这些元素被称为语义化标记
+
+### 1.加粗和强调
+
+```<strong>```用来强化语气，显示为粗体样式，```<em>```起强调作用，显示为斜体
+
+```html
+<p><strong>Beware:</strong> Pickpockets operate in this area.</p>
+<p>I <em>think</em> Ivy was the first</p>
+
+```
+
+### 2.引用
+
+```<blockquote>```用来标记那些占用一整段的较长的引用，浏览器通常会对该标签缩进,```<q>```用来标记段落中较短的引用  
+这两个元素都可以用**cite**特性来表明引用的来源
+
+```html
+<bolck cite="http://www.baidu.com">
+    <p>Did you ever stop to think. and forget to start again?</p>
+</bolck>
+<p> As A.A. Milne said. <q>Some people talk to animals. Not many listen though. That's the problem.</q></p>
+```
+
+### 3.缩写词和首字母缩写
+
+```<abbr>```首字母缩写，**title**特性指定相应的词汇
+
+```html
+<p><abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
+```
+
+### 4.引文和定义
+
+```<cite>```表示引用的来源，浏览器会解析为斜体，```<dfn>```表示一个新术语的定义
+
+```html
+<p><cite>A Brief History of Time</cite> by Stephen Hawking has sold over ten million copies worldwide.</p>
+<p>A <dfn>black hole</dfn> is a region of space from which nothing. not even light.can escape.</p>
+```
+
+### 5.设计者详细信息
+
+```<address>```包含页面设计者的联系方式
+
+```html
+<address>
+    <p><a href="mialto:anakinsky0808@gmail.com">anakinsky0808@gmail.com</a></p>
+    <p>742 Evergreen Terrace, Springfield.</p>
+</address>
+```
+
+### 6.内容的修改
+
+```<ins>```用来显示已经插入到文档中的内容，```<del>```用来显示已经删除的文本.
+```<s>```用来表示不准确或者不相关的内容
+
+```html
+<p> It was the <del>worst</del> <ins>best</ins> idea she had ever had.</p>
+<p>Laptop computer:</p>
+<p><s>Was $995</s></p>
+```
+
+## 3.小结
+
+>* HTML元素用来表述页面结构
+>* HTML元素还提供语义信息

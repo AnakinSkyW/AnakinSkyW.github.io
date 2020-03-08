@@ -1,0 +1,111 @@
+# 用表格来显示信息
+
+表格以网格形式表示数据
+
+## 1.基本的表格结构
+
+`<table>`元素用来创建表格，表格内容逐行编写，用起始标签`<tr>`来表示每一行的开始，表格中的每一个单元格用`<td>`元素表示。
+
+```html
+<table>
+    <tr>
+        <td>15</td>
+        <td>15</td>
+        <td>89</td>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+    </tr>
+</table>
+```
+
+## 2.表格的标题
+
+`<th>`元素和`<td>`元素用法一致，但它的作用是表示列或者行的标题，`<th>`元素使用`scope`特性表明元素是列标题还是行标题，它有两个值，`row`表明是行标题，`col`表明是列标题。
+
+```html
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    <tr>
+    <tr>
+        <th scope="row">Tickets sold:</th>
+        <td>120</td>
+        <td>135</td>
+    </tr>
+    <tr>
+        <th scope="row">Total sales:</th>
+        <td>$600</td>
+        <td>$599</td>
+    </td>
+</table>
+```
+
+## 3.跨列和跨行
+
+可以在`<th>`或`<td>`元素中使用`colspan`特性来表明单元格索要跨越的列数，也可以使用`rowspan`特性来表明单元格索要跨越的行数
+
+```html
+<table>
+    <tr>
+        <th></th>
+        <th>9am</th>
+        <th>10am</th>
+        <th>11am</th>
+        <th>12am</th>
+    </tr>
+    <tr>
+        <th>Monday</th>
+        <td colspan="2">Geography</td>
+        <td>Math</td>
+        <td rowspan="2">Art</td>
+    </tr>
+    <tr>
+        <th>Tuesday</th>
+        <td>Gym</td>
+        <td>Home Ec</td>
+        <td>Test</td>
+    </tr>
+</table>
+```
+
+## 4.长表格
+
+`<thead>`存放表格标题，`<tbody>`存放表格主体，`<tfoot>`存放表格脚注
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Income</th>
+            <th>Expenditure</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1st January</th>
+            <td>250</td>
+            <td>36</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td>7824</td>
+            <td>1241</td>
+        </tr>
+    </tfoot>
+</table>
+```
+
+## 5.小结
+
+>* `<table>`用来添加网格
+>* `<tr>`用来创建行，`<td>`元素表示单元格，`<th>`表示标题
+>* `rowspan`和`colspan`特性跨行跨列
+>* 长表格用`<thead>`、`<tbody>`、`<tfoot>`分层
