@@ -85,3 +85,7 @@ ExecStart=/usr/bin/dockerd --graph=/data/docker/lib
  Docker Root Dir: /data/docker/lib
 ... 
 ```
+
+### 确认无误后删除 `/var/lib/docker`
+
+`rm -rf /var/lib/docker`
