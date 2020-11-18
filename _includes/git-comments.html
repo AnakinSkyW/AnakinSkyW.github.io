@@ -1,4 +1,20 @@
-<div id="gitmentContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+{% if site.comments.gitalk %}
+<script>
+    var gitalk = new Gitalk({
+          clientID: 'Iv1.4b6b43d92a7b30ee',
+          clientSecret: 'f0da754e2f14f13758b772fc19c933b574019a59',
+          repo: 'anakinskyw.github.io}',
+          owner: 'AnakinSkyW',
+          admin: 'AnakinSkyW',
+          id: location.pathname,      // Ensure uniqueness and length less than 50{{ page.title }}
+          distractionFreeMode: 'true'  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('disqus_thread')
+</script>
+{% endif %}
+<!-- <div id="gitmentContainer"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
@@ -11,4 +27,4 @@ var gitment = new Gitment({
     },
 });
 gitment.render('gitmentContainer');
-</script>
+</script> -->
