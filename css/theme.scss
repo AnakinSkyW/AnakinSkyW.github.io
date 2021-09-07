@@ -479,12 +479,12 @@ figure.in-list {
 .v[data-class=v] .vwrap
 {
     background-color: #39393a;
-    box-shadow: 0 0 0 0, 0px 8px 16px rgb(0 0 0 / 20%);
+    box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
     border: 0;
     border-radius: 6px;
 }
 
 .v[data-class=v] .vwrap .vheader .vinput
 {
- color: white
+    color: white
 }
