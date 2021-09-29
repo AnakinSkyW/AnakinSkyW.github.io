@@ -171,8 +171,50 @@ public List<UserVO> collectionCvt(List<User> entities) {
 `nullValueMappingStrategy` **null**作为源值映射策略；**RETURN_NULL**默认返回null, **RETURN_DEFAULT**返回默认值，对于对象会通过构造器自动构造对象返回，集合会返回空集合  
 >当值为RETURN_DEFAULT时，如果映射规则中包含Mapping.expression、Mapping.constant必须手动判空处理，否则NPE  
 {: .note .warning}
->bash
 {:.filename}
 {% highlight java %}
 @MapperConfig(nullValueMappingStrategy = NullValueMappingStrategy.RETURN_DEFAULT)
+{% endhighlight %}
+
+`NullValuePropertyMappingStrategy` **null**作为源属性映射策略；**SET_TO_NULL**默认返回null，**SET_TO_DEFAULT**返回默认值，**IGNORE** 忽略该值，以目标对象已存在的值为准  
+
+
+`MappingInheritanceStrategy` 继承方法级映射配置策略：**EXPLICIT** 显示使用InheritConfiguration生效。**AUTO_INHERIT_FROM_CONFIG** 自动继承正向转换的配置。**AUTO_INHERIT_REVERSE_FROM_CONFIG** 自动继承反向转换的配置。**AUTO_INHERIT_ALL_FROM_CONFIG** 都继承  
+{:.filename}
+{% highlight java %}
+@MapperConfig(
+        mappingInheritanceStrategy = MappingInheritanceStrategy.EXPLICIT
+)
+{% endhighlight %}
+
+{:.filename}
+{% highlight java %}
+@InheritConfiguration
+void cvtVO(User entity, @MappingTarget UserVO vo);
+{% endhighlight %}
+
+`nullValueCheckStrategy`  空值监测策略  
+
+
+### 2 其他方法级别注解  
+
+`@InheritInverseConfiguration` 反向转换时继承映射规则  
+
+`@Mapping` 配置类型属性的映射规则；  
+>**dateFormat** 格式化日期  
+{:.filename}
+{% highlight java %}
+@Mapping(target = "birthday", dateFormat = "yyyy-MM-dd HH:mm:ss")
+{% endhighlight %}
+
+>**numberFormat** 数字格式化
+{:.filename}
+{% highlight java %}
+@Mapping(target = "price", numberFormat = "$#.00")
+{% endhighlight %}  
+
+>**constant** 常量
+{:.filename}
+{% highlight java %}
+@Mapping(target = "age", constant = "0")
 {% endhighlight %}
