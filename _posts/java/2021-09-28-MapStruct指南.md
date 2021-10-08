@@ -169,8 +169,9 @@ public List<UserVO> collectionCvt(List<User> entities) {
 {% endhighlight %}
 
 `nullValueMappingStrategy` **null**作为源值映射策略；**RETURN_NULL**默认返回null, **RETURN_DEFAULT**返回默认值，对于对象会通过构造器自动构造对象返回，集合会返回空集合  
->当值为RETURN_DEFAULT时，如果映射规则中包含Mapping.expression、Mapping.constant必须手动判空处理，否则NPE  
+>
 {: .note .warning}
+当值为RETURN_DEFAULT时，如果映射规则中包含Mapping.expression、Mapping.constant必须手动判空处理，否则NPE  
 {:.filename}
 {% highlight java %}
 @MapperConfig(nullValueMappingStrategy = NullValueMappingStrategy.RETURN_DEFAULT)
